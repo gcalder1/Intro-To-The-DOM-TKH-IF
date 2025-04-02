@@ -59,3 +59,6 @@ const paragraphCreated = document.createElement("p"); //p was created thanks to 
 document.body.append(paragraphCreated); //append is how it appears within the DOM (check dev elements)
 
 paragraphCreated.innerText = "it's that shrimple"; //fills the text, and then we can see it within the html output on live server
+
+
+//appending elements to other elements
