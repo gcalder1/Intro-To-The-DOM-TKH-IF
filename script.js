@@ -62,3 +62,20 @@ paragraphCreated.innerText = "it's that shrimple"; //fills the text, and then we
 
 
 //appending elements to other elements
+const div = document.createElement("div");
+
+document.body.append(div);
+
+div.innerText = "Hello World";
+
+const p = document.createElement("p");
+
+p.innerText = "I am the text of the p tag!"
+
+div.append(p);
+
+//DO THESE EXERCISES BEFORE MOVING ON!
+
+//Removing elements from the DOM
+
+//DO THESE EXERCISES BEFORE MOVING ON!
