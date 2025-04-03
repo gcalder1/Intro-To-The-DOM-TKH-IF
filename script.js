@@ -1,10 +1,10 @@
-//getElementByID
+//++getElementByID++//
 const title = document.getElementById("title");
 
 console.log(title);
 
 
-//querySelector
+//++querySelector++//
 const header2 = document.querySelector("#good");
 const p1 = document.querySelector("#neat");
 const p2 = document.querySelector("#whoa");
@@ -15,13 +15,13 @@ console.log(p1);
 console.log(p2);
 
 
-//querySelectorAll
+//++querySelectorAll++//
 const ptags = document.querySelectorAll ("p"); //yields node list (≈ array)
 
 console.log(ptags);
 
 
-//innerText
+//++innerText++//
 const h3Boom = document.querySelector(".lebomby");
 
 console.log(h3Boom.innerText);//before changes made
@@ -39,7 +39,7 @@ h3Tags.forEach(h3Tags => {
 }); //need .forEach because node list ≈ array, need to look innerText through each to change since can't target all with querySelectorAll
 
 
-//changing stuff with css via JS
+//++changing stuff with css via JS++/
 
 const modifyTextParagraph = document.querySelector("p#modifyTextParagraph");
 
@@ -53,7 +53,7 @@ img.setAttribute("src", "https://static.wikia.nocookie.net/universalstudios/imag
 //ALWAYS needs both to work / both need to be strings because html is text based, therefore making JS required to use strings for both arguments since thats the only thing setAttribute will recognize to change within the html
 
 
-//creating elements using JS via DOM
+//++creating elements using JS via DOM++//
 const paragraphCreated = document.createElement("p"); //p was created thanks to .createElement but exists in the literal void
 
 document.body.append(paragraphCreated); //append is how it appears within the DOM (check dev elements)
@@ -61,7 +61,7 @@ document.body.append(paragraphCreated); //append is how it appears within the DO
 paragraphCreated.innerText = "it's that shrimple"; //fills the text, and then we can see it within the html output on live server
 
 
-//appending HTML elements
+//++appending HTML elements++//
 // const div = document.createElement("div");
 
 // document.body.append(div);
@@ -75,7 +75,7 @@ paragraphCreated.innerText = "it's that shrimple"; //fills the text, and then we
 // div.append(p);
 
 
-//appending elements to other elements
+//++appending elements to other elements++//
 // const div = document.createElement("div");
 
 // const p = document.createElement("p");
@@ -85,23 +85,31 @@ paragraphCreated.innerText = "it's that shrimple"; //fills the text, and then we
 // document.body.append(div);
 // div.innerText = "Hello World!"; //Becuase its the last one in this "block", this innerText overrides the other previous one stated higher
 
-//appending elements to other elements cont.
+//++appending elements to other elements cont.++//
+// const div = document.createElement("div");
+
+// document.body.append(div);
+
+// div.innerText = "Hello World!";
+
+// const p = document.createElement("p");
+
+// p.innerText = "I am the text of the p tag!"
+
+// div.append(p);
+
+//++Removing elements from the DOM++//
+
 const div = document.createElement("div");
-
-document.body.append(div);
-
-div.innerText = "Hello World!";
-
 const p = document.createElement("p");
-
 p.innerText = "I am the text of the p tag!"
-
 div.append(p);
 
+document.body.append(div);
+div.remove();
+console.log("Element Removed");
+document.body.append(div);
+console.log("Element appended to the body!");
 
 
-//DO THESE EXERCISES BEFORE MOVING ON!
 
-//Removing elements from the DOM
-
-//DO THESE EXERCISES BEFORE MOVING ON!
