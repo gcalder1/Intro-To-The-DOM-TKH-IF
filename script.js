@@ -61,18 +61,23 @@ document.body.append(paragraphCreated); //append is how it appears within the DO
 paragraphCreated.innerText = "it's that shrimple"; //fills the text, and then we can see it within the html output on live server
 
 
-//appending elements to other elements
+//appending HTML elements
 const div = document.createElement("div");
 
 document.body.append(div);
 
-div.innerText = "Hello World";
+div.innerText = "";
 
 const p = document.createElement("p");
 
 p.innerText = "lorem ipsum..."
 
 div.append(p);
+
+
+//appending elements to other elements
+
+
 
 //DO THESE EXERCISES BEFORE MOVING ON!
 
