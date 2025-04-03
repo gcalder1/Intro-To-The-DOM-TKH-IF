@@ -70,7 +70,7 @@ div.innerText = "Hello World";
 
 const p = document.createElement("p");
 
-p.innerText = "I am the text of the p tag!"
+p.innerText = "lorem ipsum..."
 
 div.append(p);
 
