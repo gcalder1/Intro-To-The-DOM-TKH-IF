@@ -62,20 +62,29 @@ paragraphCreated.innerText = "it's that shrimple"; //fills the text, and then we
 
 
 //appending HTML elements
-const div = document.createElement("div");
+// const div = document.createElement("div");
 
-document.body.append(div);
+// document.body.append(div);
 
-div.innerText = "";
+// div.innerText = "";
 
-const p = document.createElement("p");
+// const p = document.createElement("p");
 
-p.innerText = "lorem ipsum..."
+// p.innerText = "lorem ipsum..."
 
-div.append(p);
+// div.append(p);
 
 
 //appending elements to other elements
+const div = document.createElement("div");
+
+const p = document.createElement("p");
+p.innerText = "I am the text of the p tag!"
+div.append(p);
+
+document.body.append(div);
+div.innerText = "Hello World!"; //Becuase its the last one in this "block", this innerText overrides the other previous one stated higher
+
 
 
 
